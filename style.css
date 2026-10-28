@@ -140,7 +140,7 @@
         padding: 20px 0;
     }
 
-    #hero button{
+    #hero .botao{
         display: inline-block; /* permite scale e padding no link */
         text-decoration: none;
         border-radius: 50px; /* arredonda os cantos */
@@ -244,6 +244,44 @@
     background-color: rgb(243, 46, 46);
 }
 
+/* ======  CONTATOS  ====== */
+
+#contatos-lista{
+    display: flex;
+    margin: 30px auto 0;
+    padding: 0;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contatos-lista li{
+    list-style: none;
+    min-width: 200px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#contatos-lista a{
+    display: block;
+    padding: 20px 30px;
+    color: black;
+}
+
+#contatos-lista img,
+#contatos-lista svg{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+#contatos-lista li:hover{
+    scale: 1.05;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 
@@ -282,7 +320,7 @@ body.escuro header button:hover img{
 }
 
 body.escuro #hero{
-    background-image: url(./background-code-548683-dark-PedroGuedes.png);
+    background-image: url(./background-code-481403-dark-PedroGuedes.png);
 }
 
 body.escuro .card{
