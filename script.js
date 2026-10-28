@@ -4,9 +4,9 @@ const botaotema = document.getElementById("botao-tema");
 const textotema = document.getElementById("texto-tema");
 
 botaotema.addEventListener("click", function () {
-    document.body.classList.toggle("tema-escuro");
+    document.body.classList.toggle("escuro");
 
-    if (document.body.classList.contains("tema-escuro")) {
+    if (document.body.classList.contains("escuro")) {
         textotema.textContent = "tema claro";
     } else {
         textotema.textContent = "tema escuro";
@@ -16,11 +16,11 @@ botaotema.addEventListener("click", function () {
 //  ====== 2. CARROSSEL DE PROJETOS ======
 
 const carrossel = document.querySelector(".carrossel");
-const voltar = document.getElementById("voltar");
-const avancar = document.getElementById("avancar");
+const botaoVoltar = document.getElementById("voltar");
+const botaoAvancar = document.getElementById("avancar");
 
 const fimDoCarrossel = function () {
-    return carrossel.scrollLeft + carrossel.clienteWidth >= carrossel.scrollWidth -1; 
+    return carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth -1; 
 }
 
 botaoAvancar.addEventListener("click", function () {
