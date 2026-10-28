@@ -1,0 +1,290 @@
+/* GERAL */
+
+    *{
+        font-family: sans-serif;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .quadrado{
+        border: 2px solid red;
+        padding: 20px;
+    }
+
+
+    h3{
+        color: rgb(48, 180, 48);
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 20px;
+    }
+
+    p{
+        color: rgb(91, 95, 91);
+    }
+
+    p, button{
+        padding: 20px 0;
+    }
+
+    .sections{
+        padding: 50px 230px;
+    }
+
+    .sections:nth-child(odd){
+        background-color: rgb(160, 0, 0);
+    }
+
+    .sections:nth-child(odd) h3{
+        color: white;
+    }
+
+    /* ====== CABEÇALHO ===== */
+
+    header{
+        border-bottom: 1px solid black;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between; /* justify content alinha horizontalmente, direita e esquerda - space beetween espaça perfeitamente entre todos os elementos */
+        align-items: center;
+    }
+
+    #logo{
+        color: black;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    #logo span{
+        color: rgb(212, 47, 47);
+    }
+
+    nav{
+        width: 25%; /* largura */
+        display: flex; /* mexer livremente na largura do nav, mas não mexer na largura do header */
+        justify-content: space-between;
+    }
+
+    nav a{
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px; /* raio, bordas arredondadas */
+        transition: all 0.2s ease-in; /* tempo de transição de todos os elementos, 0.2 segundos, efeito ease-in */
+    }
+
+    nav a:hover{ /* função de hover, qnd a pessoa passar o mouse em cima fará alguma coisa */
+        background-color: rgb(228, 50, 50);
+        color: white;
+    }
+
+    header button{
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 18px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        transition: all 0.2s ease-in;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    header button img{
+        width: 18px;
+        filter: invert(1);
+    }
+
+    header button:hover{
+        scale: 1.05;
+        background-color: rgb(243, 46, 46);
+    }
+
+    header button:active{
+        background-color: rgb(107, 107, 107);
+        scale: 0.85;
+    }
+
+
+    /* ====== HERO ====== */
+    #hero{
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./background-code-548683-light-PedroGuedes.png);
+        background-size: cover; /*tamanho da imagem, cover cobre tudo*/
+        background-repeat: no-repeat; /* não repete a imagem */
+        flex-direction: column; /* imagens em coluna */
+    }
+
+    #hero img{
+        width: 300px; 
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover; /*cobre a imagem inteira, sem distorção */
+    }
+
+    #hero h1{
+        padding: 40px 0 20px 0;
+        font-weight: bolder;
+    }
+
+    #hero h2{
+        padding: 20px 0;
+    }
+
+    #hero button{
+        display: inline-block; /* permite scale e padding no link */
+        text-decoration: none;
+        border-radius: 50px; /* arredonda os cantos */
+        font-size: 20px;
+        padding : 10px 20px;
+        border: 0;
+        background-color: rgb(69, 173, 69);
+        color: white;
+        transition: all 0.2s ease-in;
+    }
+
+    #hero .botao:hover{
+        scale: 1.05;
+        background-color: rgb(243, 46, 46);
+    }
+
+
+/* =======  HABILIDADES  ======= */
+#stacks{
+    display: flex;
+    margin: 30px auto 0;
+    width: 100%;
+    padding: 0;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#stacks li{
+    list-style: none;
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#stacks li:hover{
+    margin-top: -20px;
+    box-shadow: -10px 20px rgba(247, 234, 234, 0.404)
+}
+
+#stacks li img{
+    width: 70px;
+    margin: 12px 0;
+}
+
+/* ======  PROJETOS  ====== */
+
+.carrossel{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.card{
+    flex: 0 0 280px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.425);
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card h5, .card p{
+    padding: 10px 15px;
+}
+
+.setas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.setas button{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(181, 19, 19);
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.setas button:hover{
+    background-color: rgb(243, 46, 46);
+}
+
+
+
+
+/* ===== TEMA ESCURO ===== */
+
+body.escuro{
+    background-color: black;
+    color: white;
+}
+
+body.escuro header{
+    border-bottom: #333;
+}
+
+body.escuro #logo,
+body.escuro nav a,
+body.escuro p{
+    color: white;
+}
+
+body.escuro header button{
+    background-color: white;
+    color: black;
+}
+body.escuro header button:hover{
+    background-color: rgb(243, 46, 46);
+    color: white;
+}
+
+body.escuro header button img{
+    filter: none;
+}
+
+body.escuro header button:hover img{
+    filter: invert(1);
+}
+
+body.escuro #hero{
+    background-image: url(./background-code-548683-dark-PedroGuedes.png);
+}
+
+body.escuro .card{
+    background-color: #1e1e1e;
+}
