@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +9,94 @@
 </head>
 <body>
     <header>
-        <a href="#"id="logo">Pedro<span>.Dev</span></a>
+        <a href="#" id="logo">Pedro<span>.Dev</span></a>
         <nav>
-            <a href="">Sobre</a>
-            <a href="">Habilidades</a>
-            <a href="">Projetos</a>
-            <a href="">Contatos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
         </nav>
-        <button><span>tema escuro</span></button>
+        <button id="botao-tema"><img src="./sol.png" alt="Sol"> <span id="texto-tema">Tema Claro</span></button>
+
     </header>
 
-    
+    <main>
+        <section id="hero">
+            <img src="./Guedes.jpeg" alt="Foto de Pedro Guedes">
+            <h1>Pedro Guedes</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <button href="#contatos" class="botao">Fale comigo!</button>
+        </section>
+
+        <section class="sections" id="sobre">
+            <h3>Sobre mim</h3>
+            <p>Olá, meu nome é Pedro Guedes e sou um estudante de Engenharia de Software apaixonado por criar soluções digitais. Com habilidades em HTML, CSS e JavaScript, estou sempre em busca de aprimorar minhas habilidades e aprender novas tecnologias para oferecer soluções inovadoras aos desafios do desenvolvimento web.</p>
+        </section>
+
+        <section class="sections" id="habilidades">
+            <h3>Habilidades</h3>
+            <ul id="stacks">
+                <li><img src="./html-5.png" alt="HTML"><h4>HTML</h4></li>
+                <li><img src="./css-3.png" alt="CSS"><h4>CSS</h4></li>
+                <li><img src="./js.png" alt="JavaScript"><h4>JavaScript</h4></li>
+                <li><img src="./github.png" alt="GitHub"><h4>GitHub</h4></li>
+                <li><img src="./c.png" alt="C"><h4>C</h4></li>
+                <li><img src="./Python.jpeg" alt="Python"><h4>Python</h4></li>
+
+            </ul>
+        </section>
+
+        <section class="sections" id="projetos">
+            <h3>Projetos</h3>
+            <div class="carrossel" id="carrossel">
+                <div class="card">
+                    <img src="./projeto-tarefas.jpg.jpeg" alt="Projeto Tarefas">
+                    <h5>Projeto Meu Curriculo</h5>
+                    <p>
+                        Projeto desenvolvido durante a Work in Tech 2026, com o objetivo de criar um currículo digital interativo. Utilizando HTML, CSS e JavaScript, o projeto apresenta informações sobre minha formação, habilidades e experiências profissionais de forma dinâmica e visualmente atraente.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./projeto-tarefas.jpg.jpeg" alt="Projeto Tarefas">
+                    <h5>Projeto Lista da Vez</h5>
+                    <p>
+                        Projeto desenvolvido em HTML e JavaScript com o objetivo de anotar atendimentos, vendas e visualizar progressos, permitindo uma visão simplificada das metas.                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./projeto-tarefas.jpg.jpeg" alt="Projeto Tarefas">
+                    <h5>Projeto Meu Curriculo</h5>
+                    <p>
+                        Aguarde
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./projeto-tarefas.jpg.jpeg" alt="Projeto Tarefas">
+                    <h5>Projeto Meu Curriculo</h5>
+                    <p>
+                        Aguarde
+                </div>
+
+                <div class="card">
+                    <img src="./projeto-tarefas.jpg.jpeg" alt="Projeto Tarefas">
+                    <h5>Projeto Meu Curriculo</h5>
+                    <p>
+                        Aguarde
+                    </p>
+                </div>
+
+            </div>
+            <div class="setas">
+                    <button id="voltar"><</button>
+                    <button id="avancar">></button> 
+                </div>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
